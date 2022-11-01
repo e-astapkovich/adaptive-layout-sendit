@@ -203,12 +203,6 @@ const watchFiles = () => {
 
 // map-файлы, картинки без сжатия
 exports.default = series(delDirDist, parallel(htmlInclude, fontsConvert, imgToApp, svgToApp, svgToSprite), fontsWoffMove, fontStyle, styles, watchFiles);
-// exports.default = series(delDirDist, htmlInclude, fontsConvert, imgToApp, svgToApp, svgToSprite, fontsWoffMove, fontStyle, styles, watchFiles);
 
 // без map-файлов, картинки сжимаются Tinypng
 exports.build = series(delDirDist, parallel(htmlInclude, fontsConvert, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild, imgCompress);
-// exports.build = series(delDirDist, htmlInclude, fontsConvert, svgToApp, svgToSprite, fontsWoffMove, fontStyle, stylesBuild, imgCompress);
-
-// TODO минифицированная версия
-// без map-файлов, картинки сжимаются Tinypng, HTML и CSS минифицируются
-// exports.buildmin = series()
