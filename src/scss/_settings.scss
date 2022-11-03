@@ -25,6 +25,7 @@ ul {
 img {
 	max-width: 100%;
 }
+
 /**
 Базовый сброс стилей
 Конец
@@ -37,4 +38,40 @@ body {
 
 .wrapper-flex {
 	display: flex;
+}
+
+.title-h2 {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+.title-h3 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.title-h4 {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.btn {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 1px solid black;
+	// border-radius: 100%;
+	border-bottom-left-radius: 100% 0;
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
 }
