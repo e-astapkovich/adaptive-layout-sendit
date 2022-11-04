@@ -34,23 +34,29 @@ img {
 body {
 	font-family: 'MyriadPro', sans-serif;
 	margin: 0;
+	position: relative;
 }
 
 .wrapper-flex {
 	display: flex;
 }
 
+.title {
+	margin: 0;
+	padding: 0;
+}
+
 .title-h2 {
 	font-weight: 900;
-	font-size: 48px;
-	line-height: 58px;
+	font-size: 32px;
+	line-height: 38px;
 	text-transform: uppercase;
 }
 
 .title-h3 {
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 43px;
+	font-size: 24px;
+	line-height: 29px;
 }
 
 .title-h4 {
@@ -59,19 +65,33 @@ body {
 	line-height: 36px;
 }
 
-.btn {
+.button {
 	margin: 0;
 	padding: 0;
+	height: 48px;
+	width: 100%;
 	background: transparent;
 	border: 1px solid black;
-	// border-radius: 100%;
-	border-bottom-left-radius: 100% 0;
+	border-radius: 24px;
 	color: black;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
+
+	&_color-blue {
+		background-color: var(--color-blue);
+		border-color: var(--color-blue);
+		color: #fff;
+	}
+
+	&_color-orange {
+		background-color: var(--color-orange);
+		border-color: var(--color-orange);
+		color: #fff;
+	}
 }
