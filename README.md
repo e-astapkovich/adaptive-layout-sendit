@@ -5,4 +5,4 @@
 - SCSS
 - gulp
 
-[Ссылка на макет в Figma](https://www.figma.com/file/kpW5yz3xbuyCckNfCMiBpi/Лендинг-(Copy)-(Copy)?node-id=0%3A1)
+[Ссылка на макет в Figma](https://www.figma.com/file/3Q7NJSnqZ3kTk2t20YRxwQ/Лендинг-(Copy)-(Copy)?node-id=0%3A1)
