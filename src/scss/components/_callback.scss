@@ -1,0 +1,57 @@
+.callback {
+  background-color: var(--color-blue);
+  color: #fff;
+  padding-top: 28px;
+  padding-bottom: 8px;
+
+  &__content {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 12px;
+  }
+
+  &__input {
+    margin: 0;
+    margin-bottom: 9px;
+    padding: 17px 24px;
+    height: 48px;
+    width: 100%;
+    color: inherit;
+    border-radius: 24px;
+    background: transparent;
+    border: 1px solid #fff;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__button {
+    color: initial;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__consent {
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 15px;
+
+    &::before {
+      content: "";
+      position: relative;
+      left: -6px;
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      background: transparent;
+      border: 1px solid #fff;
+    }
+  }
+}
