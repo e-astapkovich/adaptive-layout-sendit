@@ -7,10 +7,21 @@
 
   &__item {
     display: flex;
-    height: 300px;
+    // height: 300px;
     padding-bottom: 40px;
     flex-direction: column;
     justify-content: end;
+  }
+
+  &__title {
+    display: flex;
+    align-items: end;
+    height: 239px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
     background-size: contain;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -26,19 +37,26 @@
     }
     &-4 {
       background-image: url('../img/step-4-small.jpg');
-    }
-  }
 
-  &__title {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 31px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
+      // Для отладки, т.к. в макете высота блоков с шагами разная
+      height: 172px;
+    }
   }
 
   &__descr {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  &__cta {
+    background: #F7F7F7;
+    padding: 21px 0 23px;
+
+    // Для отладки, т.к. в макете высота блоков с шагами разная
+    background: silver;
+  }
+
+  &-cta__title {
+    margin-bottom: 12px;
   }
 }
