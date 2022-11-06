@@ -34,24 +34,24 @@
     color: initial;
   }
 
-  &__checkbox {
-    display: none;
-  }
-
   &__consent {
     font-size: 10px;
     line-height: 12px;
     padding-left: 15px;
-
-    &::before {
-      content: "";
-      position: relative;
-      left: -6px;
-      display: inline-block;
-      width: 9px;
-      height: 9px;
-      background: transparent;
-      border: 1px solid #fff;
-    }
   }
+}
+
+.custom-checkbox__descr::before {
+  content: "";
+  position: relative;
+  left: -7px;
+  top: 3px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url('../img/check.svg');
+}
+
+.callback__checkbox:checked~.custom-checkbox__descr::before {
+  background-image: url('../img/check-2.svg');
 }
