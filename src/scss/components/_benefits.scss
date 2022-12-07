@@ -1,0 +1,20 @@
+.benefits {
+  padding-top: 19px;
+  background-color: #f7f7f7;
+
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+
+  &__img-mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86px;
+    height: 86px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+}
