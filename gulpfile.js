@@ -202,7 +202,6 @@ const watchFiles = () => {
 
   watch(paths.srcScss, styles);
   watch(`${srcFolder}/**/*.html`, htmlInclude);
-  // watch(`${paths.srcImgFolder}/**/*.[jpg, jpeg, png]`, imgToApp);
   watch([
     `${paths.srcImgFolder}/**/*.jpeg`,
     `${paths.srcImgFolder}/**/*.jpg`,
