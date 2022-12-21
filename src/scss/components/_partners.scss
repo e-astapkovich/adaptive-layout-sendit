@@ -1,5 +1,5 @@
 .partners {
-  padding: 18px 0;
+  padding: 17px 0;
 
   &__list {
     position: relative;
@@ -24,16 +24,15 @@
       height: 12px;
       border: solid #C4C4C4;
       border-width: 2px 0 0 2px;
-      transform: translateY(-50%);
     }
 
     &::before {
-      transform: rotate(-45deg);
+      transform: translateY(-100%) rotate(-45deg);
       left: 2px;
     }
 
     &::after {
-      transform: rotate(135deg);
+      transform: translateY(-100%) rotate(135deg);
       right: 4px;
     }
   }
