@@ -1,17 +1,23 @@
 .callback {
-  background-color: var(--color-blue);
-  color: #fff;
-  padding-top: 28px;
-  padding-bottom: 8px;
+  &_1 {
+    background-color: var(--color-blue);
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 8px;
+
+  }
 
   &_2 {
     background-color: #e9e9e9;
     color: black;
     padding-top: 18px;
+    padding-bottom: 13px;
   }
 
   &__content {
-    margin-bottom: 16px;
+    &_1 {
+      margin-bottom: 16px;
+    }
 
     &_2 {
       margin-bottom: 10px;
@@ -19,9 +25,11 @@
   }
 
   &__title {
-    font-size: 28px;
-    line-height: 34px;
-    margin-bottom: 12px;
+    &_1 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 12px;
+    }
 
     &_2 {
       font-size: 18px;
@@ -32,15 +40,31 @@
   }
 
   &__input {
-    margin: 0;
-    margin-bottom: 9px;
-    padding: 17px 24px;
-    height: 48px;
-    width: 100%;
-    color: inherit;
-    border-radius: 24px;
     background: transparent;
-    border: 1px solid #fff;
+    margin: 0;
+    &_1 {
+      border: 1px solid #fff;
+      margin-bottom: 9px;
+      padding: 17px 24px;
+      height: 48px;
+      width: 100%;
+      color: #fff;
+      border-radius: 24px;
+    }
+
+    &_2 {
+      border: 1px solid #000;
+      margin-bottom: 9px;
+      padding: 17px 24px;
+      height: 40px;
+      width: 100%;
+      color: #363636;
+      border-radius: 20px;
+    }
+
+    &::placeholder {
+      color: inherit;
+    }
 
     &:focus-visible {
       outline: none;
@@ -48,13 +72,27 @@
   }
 
   &__button {
-    color: initial;
+
+    &_1 {
+      color: initial;
+    }
+
+    &_2 {
+      height: 40px;
+      margin-bottom: 7px;
+    }
   }
 
   &__consent {
     font-size: 10px;
     line-height: 12px;
     padding-left: 15px;
+    &_1 {
+    }
+
+    &_2 {
+      color: #9e9e9e;
+    }
   }
 }
 
