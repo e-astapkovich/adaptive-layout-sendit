@@ -89,7 +89,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 48px;
-	width: 100%;
+	width: 280px;
 	background: transparent;
 	border: 1px solid black;
 	border-radius: 24px;
@@ -114,5 +114,17 @@ body {
 		background-color: var(--color-orange);
 		border-color: var(--color-orange);
 		color: #fff;
+	}
+
+	@media (max-width: 767px) {
+		margin: 0 auto;
+	}
+}
+
+.input {
+	width: 280px;
+	display: block;
+	@media (max-width: 767px) {
+		margin: 0 auto;
 	}
 }
