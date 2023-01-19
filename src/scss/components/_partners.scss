@@ -1,6 +1,9 @@
 .partners {
   padding: 17px 0 5px;
 
+  // TODO
+  // последняя картинка в строке не прижимается к правому краю
+
   &__list {
     position: relative;
     display: grid;
