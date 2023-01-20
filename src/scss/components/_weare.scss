@@ -2,11 +2,15 @@
   background: #F7F7F7;
   padding: 17px 0;
 
-
-  &__img {
-    display: inline-block;
+  &__picture-wrapper {
     margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
   }
+
+  // &__img {
+  //   display: inline-block;
+  // }
 
   &__title-h4 {
     margin-bottom: 10px;
