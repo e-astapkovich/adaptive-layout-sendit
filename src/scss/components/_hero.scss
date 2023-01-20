@@ -6,7 +6,11 @@
     background-image: url(../img/hero-mobile.jpg);
     background-color: var(--color-grey);
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position: right -58px top;
+
+    @media (min-width: 540px) {
+      background-position: right;
+    }
   }
 
   &__content {
