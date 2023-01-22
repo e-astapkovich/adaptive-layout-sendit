@@ -7,16 +7,18 @@
 
   &__item {
     display: flex;
-    // height: 300px;
     padding-bottom: 40px;
     flex-direction: column;
     justify-content: flex-end;
   }
 
+  &__img {
+    margin-bottom: 14px;
+  }
+
   &__title {
     display: flex;
     align-items: flex-end;
-    height: 239px;
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
@@ -25,22 +27,6 @@
     background-size: contain;
     background-position: 0 0;
     background-repeat: no-repeat;
-
-    &-1 {
-      background-image: url('../img/step-1-small.jpg');
-    }
-    &-2 {
-      background-image: url('../img/step-2-small.jpg');
-    }
-    &-3 {
-      background-image: url('../img/step-3-small.jpg');
-    }
-    &-4 {
-      background-image: url('../img/step-4-small.jpg');
-
-      // Для отладки, т.к. в макете высота блоков с шагами разная
-      height: 172px;
-    }
   }
 
   &__descr {
@@ -51,9 +37,6 @@
   &__cta {
     background: #F7F7F7;
     padding: 21px 0 23px;
-
-    // Для отладки, т.к. в макете высота блоков с шагами разная
-    background: silver;
   }
 
   &-cta__title {
