@@ -57,6 +57,7 @@
 
 .faq-summary {
   display: flex;
+  justify-content: space-between;
 
   &__header {
     padding-right: 9px;
