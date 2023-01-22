@@ -86,7 +86,7 @@ body {
 }
 
 .button {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	height: 48px;
 	width: 280px;
@@ -115,16 +115,10 @@ body {
 		border-color: var(--color-orange);
 		color: #fff;
 	}
-
-	@media (max-width: 767px) {
-		margin: 0 auto;
-	}
 }
 
 .input {
 	width: 280px;
 	display: block;
-	@media (max-width: 767px) {
-		margin: 0 auto;
-	}
+	margin: 0 auto;
 }
