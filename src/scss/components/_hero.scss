@@ -11,6 +11,12 @@
     @media (min-width: 540px) {
       background-position: right;
     }
+
+    @media (min-width: 768px) {
+      height: 413px;
+      background-image: url(../img/hero-tablet.jpg);
+      background-position: right -113px top;
+    }
   }
 
   &__content {
