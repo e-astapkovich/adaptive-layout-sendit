@@ -14,8 +14,15 @@
   @media (min-width: 768px) {
     height: 413px;
     padding-top: 103px;
-    background-image: url(../img/hero-tablet.jpg);
-    background-position: right -113px top;
+    background-image: url(../img/hero-desktop.jpg);
+    background-position: right 30% bottom;
+    background-size: cover;
+  }
+
+  @media (min-width: 1440px) {
+    height: 523px;
+    background-position: center bottom;
+    background-size: contain;
   }
 
   &__content {
