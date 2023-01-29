@@ -2,15 +2,23 @@
   background: #F7F7F7;
   padding: 17px 0;
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  &__picture-wrapper,
+  &__title-h4,
+  &__content {
+    grid-column: span 2;
+  }
+
   &__picture-wrapper {
     margin-bottom: 19px;
     display: flex;
     justify-content: center;
   }
-
-  // &__img {
-  //   display: inline-block;
-  // }
 
   &__title-h4 {
     margin-bottom: 10px;
