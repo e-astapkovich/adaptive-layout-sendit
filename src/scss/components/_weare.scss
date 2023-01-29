@@ -4,7 +4,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 43% 1fr;
     grid-template-rows: repeat(2, auto);
   }
 
@@ -18,13 +18,49 @@
     margin-bottom: 19px;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 768px) {
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+  }
+
+  &__img {
+    @media (min-width: 768px) {
+      position: relative;
+      top: -10px;
+    }
   }
 
   &__title-h4 {
     margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+      line-height: 43px;
+      font-weight: 700;
+      grid-row-start: 1;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__content {
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+      grid-row-start: 2;
+      grid-column: span 1;
+    }
   }
 
   &__descr {
     margin-bottom: 22px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+    }
   }
 }
