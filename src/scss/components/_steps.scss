@@ -3,6 +3,14 @@
 
   &__list {
     margin: 0;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      align-items: start;
+      row-gap: 31px;
+    }
   }
 
   &__item {
@@ -10,6 +18,11 @@
     padding-bottom: 40px;
     flex-direction: column;
     justify-content: flex-end;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      padding: 0 35px;
+    }
   }
 
   &__img {
@@ -27,11 +40,30 @@
     background-size: contain;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 
   &__descr {
     font-size: 14px;
     line-height: 17px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__cta {
