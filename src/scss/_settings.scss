@@ -118,6 +118,11 @@ body {
 
 	@media (min-width: 768px) {
 		margin: 0;
+		min-width: 280px;
+	}
+
+	@media (min-width: 1440px) {
+		min-width: 360px;
 	}
 }
 

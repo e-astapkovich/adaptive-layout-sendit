@@ -1,6 +1,18 @@
 .steps {
   padding-top: 27px;
 
+  // DEBUG
+  @media (min-width: 768px) {
+    padding-top: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    // padding-top: 72px;
+    // DEBUG
+    padding-top: 208px;
+  }
+
+
   &__list {
     margin: 0;
 
@@ -69,9 +81,38 @@
   &__cta {
     background: #F7F7F7;
     padding: 21px 0 23px;
+
+    @media (min-width: 768px) {
+      padding: 25px 0 19px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 66px 0 59px;
+    }
+  }
+}
+
+.steps-cta {
+  &__wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
-  &-cta__title {
+  &__title {
     margin-bottom: 12px;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 34px;
+      margin-right: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 }
