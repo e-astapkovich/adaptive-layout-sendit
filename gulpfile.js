@@ -214,4 +214,7 @@ const watchFiles = () => {
 exports.default = series(delDirDist, parallel(htmlInclude, fontsConvert, imgToApp, svgToApp, svgToSprite), fontsWoffMove, fontStyle, styles, watchFiles);
 
 // без map-файлов, картинки сжимаются Tinypng
-exports.build = series(delDirDist, parallel(htmlInclude, fontsConvert, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild, imgCompress);
+// exports.build = series(delDirDist, parallel(htmlInclude, fontsConvert, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild, imgCompress);
+
+//вариант для Netlyfy (чтоб при каждом пуше не сжимались картинки, т.к. ограничено искользование Tinypng)
+exports.build =   series(delDirDist, parallel(htmlInclude, fontsConvert, imgToApp, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild);
