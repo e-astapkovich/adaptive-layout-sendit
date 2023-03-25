@@ -60,9 +60,7 @@ const stylesBuild = () => {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(cleanCSS({
-      level: 2
-    }))
+    .pipe(cleanCSS())
     .pipe(dest(paths.buildCssFolder))
 };
 
