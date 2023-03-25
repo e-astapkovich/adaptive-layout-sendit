@@ -1,6 +1,5 @@
 {
   "private": true,
-  "a": "1",
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
