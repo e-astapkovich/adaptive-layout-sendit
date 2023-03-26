@@ -19,6 +19,7 @@
 
   &__details {
     grid-column: 12 span;
+    min-height: 80px;
   }
 
   &__summary, &__answer {
@@ -32,6 +33,7 @@
     list-style: none;
     padding: 14px 25px;
     padding-right: 23px;
+    min-height: 52px;
   }
 
   &__answer {
@@ -58,6 +60,7 @@
 .faq-summary {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__header {
     padding-right: 9px;

@@ -4,6 +4,15 @@
     color: #fff;
     padding-top: 28px;
     padding-bottom: 8px;
+    @media(min-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 28px;
+    }
+    @media(min-width: 1440px) {
+      padding-top: 20px;
+      padding-bottom: 28px;
+    }
+
 
   }
 
