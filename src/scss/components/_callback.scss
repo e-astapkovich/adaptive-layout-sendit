@@ -14,9 +14,20 @@
     padding-bottom: 13px;
   }
 
+  &-1__wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__content {
     &_1 {
       margin-bottom: 16px;
+      @media (min-width: 768px) {
+        margin-right: 20px;
+      }
     }
 
     &_2 {
