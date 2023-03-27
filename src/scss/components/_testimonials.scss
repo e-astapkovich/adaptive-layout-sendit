@@ -10,6 +10,9 @@
 
   // DEBUG 1440px:
   // margin-bottom: 403px;
+  @media (min-width:1440px) {
+    height: 547px;
+  }
 
   &__title {
     font-size: 28px;
