@@ -1,6 +1,16 @@
 .partners {
   padding: 17px 0 5px;
 
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 58px;
+    padding-bottom: 45px;
+  }
+
   &__list {
     position: relative;
     display: grid;
@@ -13,6 +23,19 @@
     justify-items: center;
     column-gap: 19px;
     row-gap: 6px;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      padding: 0px 60px;
+      column-gap: 10px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0px 100px;
+      column-gap: 31px;
+    }
 
     &::before,
     &::after {
@@ -24,11 +47,20 @@
       height: 12px;
       border: solid #C4C4C4;
       border-width: 2px 0 0 2px;
+
+      @media (min-width: 1440px) {
+        width: 22px;
+        height: 22px;
+      }
     }
 
     &::before {
       transform: translateY(-100%) rotate(-45deg);
       left: 2px;
+
+      @media (min-width: 1440px) {
+        left: 5px;
+      }
     }
 
     &::after {
@@ -40,5 +72,13 @@
   &__logo {
     object-fit: contain;
     object-position: center;
+
+    @media (min-width: 768px) {
+      min-width: 66px;
+    }
+
+    @media (min-width: 1440px) {
+      min-width: 96px;
+    }
   }
 }
