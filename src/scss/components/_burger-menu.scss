@@ -20,7 +20,11 @@
     }
   }
 
-  // &__item {
-  //   text-transform: capitalize;
-  // }
+  &__icon {
+    height: 29px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
