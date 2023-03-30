@@ -1,7 +1,4 @@
 .burger-menu {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 100;
   max-width: 875px;
 
   @media (min-width: 768px) {
@@ -23,7 +20,7 @@
     }
   }
 
-  &__item {
-    text-transform: capitalize;
-  }
+  // &__item {
+  //   text-transform: capitalize;
+  // }
 }
