@@ -1,0 +1,30 @@
+.burger-menu {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 100;
+  max-width: 875px;
+
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__list {
+    display: none;
+    justify-content: space-between;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    text-transform: capitalize;
+  }
+}
