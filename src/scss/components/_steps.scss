@@ -2,22 +2,22 @@
   padding-top: 27px;
 
   // DEBUG
-  @media (min-width: 768px) {
-    padding-top: 136px;
-  }
+  // @media (min-width: 768px) {
+  //   padding-top: 136px;
+  // }
 
-  @media (min-width: 1440px) {
-    // padding-top: 72px;
-    // DEBUG
-    padding-top: 259px;
-  }
+  // @media (min-width: 1440px) {
+  //   // padding-top: 72px;
+  //   // DEBUG
+  //   padding-top: 259px;
+  // }
 
 
   &__list {
     margin: 0;
 
     // DEBUG
-    margin-bottom: -52px;
+    // margin-bottom: -52px;
 
     @media (min-width: 768px) {
       display: grid;

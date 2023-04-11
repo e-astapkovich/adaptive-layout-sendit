@@ -117,6 +117,12 @@
     display: flex;
     flex-wrap: wrap;
 
+    &_1 {
+      @media (min-width: 768px) {
+        column-gap: 20px;
+      }
+    }
+
     &_2 {
       @media (min-width: 768px) {
         flex-grow: 1;
@@ -195,6 +201,7 @@
 
     @media (min-width: 768px) {
       padding-left: 6px;
+      min-width: 100%;
     }
 
     &_2 {
